@@ -11,7 +11,7 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #1a1a1a; /* darker background */
+      background: #121212; /* Dark background */
       color: #f0f0f0;
       display: flex;
       flex-direction: column;
@@ -21,48 +21,30 @@
 
     header {
       padding: 2rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin: 0;
+      margin-bottom: 0.5rem;
     }
 
-    .social-inline a {
+    .social-links {
+      margin: 1rem 0;
+    }
+
+    .social-links a {
       text-decoration: none;
       color: #f0f0f0;
-      font-size: 2.5rem;
-      display: flex;
-      align-items: center;
+      margin: 0 12px;
+      font-size: 2rem;
     }
 
-    .video-container {
-      margin-top: 1rem;
+    iframe {
       width: 90%;
       max-width: 800px;
-      position: relative;
-    }
-
-    .video-container iframe {
-      width: 100%;
       height: 450px;
       border: none;
-      pointer-events: none;
-      opacity: 0.9;
-    }
-
-    .video-link {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
+      margin-top: 1rem;
     }
 
     .note {
@@ -76,7 +58,7 @@
         font-size: 2rem;
       }
 
-      .video-container iframe {
+      iframe {
         height: 250px;
       }
     }
@@ -86,24 +68,21 @@
 
   <header>
     <h1>Jugal Lekharu</h1>
-    <div class="social-inline">
+    <div class="social-links">
       <a href="https://www.instagram.com/jlekharu" target="_blank" title="Instagram">
         <i class="fab fa-instagram"></i>
       </a>
     </div>
   </header>
 
-  <!-- Video container with clickable overlay -->
-  <div class="video-container">
-    <a href="https://youtu.be/zzaIGC-MouU?si=YSiAsWlRXzAc0FcN" class="video-link" target="_blank" title="Watch on YouTube"></a>
-    <iframe
-      src="https://www.youtube.com/embed/zzaIGC-MouU?autoplay=1&mute=1&loop=1&playlist=zzaIGC-MouU&modestbranding=1&rel=0&controls=0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <!-- YouTube video iframe -->
+  <iframe
+    src="https://www.youtube.com/embed/zzaIGC-MouU?autoplay=1&mute=1&loop=1&playlist=zzaIGC-MouU&modestbranding=1&rel=0&controls=1"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
 
-  <p class="note">🔊 Tap the video to open on YouTube with sound!</p>
+  <p class="note">🔊 Unmute the video for sound!</p>
 
 </body>
 </html>
