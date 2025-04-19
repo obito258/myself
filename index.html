@@ -3,100 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jugal Lekharu</title>
-  <!-- Font Awesome Icons -->
+  <title>Jugal's Site</title>
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #121212; /* Dark background */
+      background-color: #121212;
       color: #f0f0f0;
+      font-family: 'Courier New', Courier, monospace;
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 2rem;
       text-align: center;
     }
 
-    header {
-      padding: 2rem 1rem;
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #00aaff;
+      margin-bottom: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.05);
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      color: #00aaff;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .social-section {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
     }
 
     .social-links {
-      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 0.5rem;
     }
 
     .social-links a {
-      text-decoration: none;
-      color: #f0f0f0;
-      margin: 0 12px;
+      color: #00aaff;
       font-size: 2rem;
+      text-decoration: none;
+      transition: transform 0.3s ease;
     }
 
-    iframe {
-      width: 90%;
-      max-width: 800px;
-      height: 450px;
-      border: none;
-      margin-top: 1rem;
-    }
-
-    .note {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-      color: #bbb;
-    }
-
-    .quote {
-      margin: 3rem 1rem 2rem;
-      font-size: 1.3rem;
-      font-style: italic;
-      color: #ccc;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.05);
-    }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      iframe {
-        height: 250px;
-      }
+    .social-links a:hover {
+      transform: scale(1.2);
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Jugal Lekharu</h1>
-    <div class="social-links">
-      <a href="https://www.instagram.com/jlekharu" target="_blank" title="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>
-  </header>
+  <!-- Profile Image -->
+  <a href="https://t.me/yourusername" target="_blank">
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+  </a>
 
-  <!-- YouTube video iframe -->
-  <iframe
-    src="https://www.youtube.com/embed/zzaIGC-MouU?autoplay=1&mute=1&loop=1&playlist=zzaIGC-MouU&modestbranding=1&rel=0&controls=1"
-    allow="autoplay; encrypted-media"
-    allowfullscreen>
-  </iframe>
+  <!-- Heading -->
+  <h1>Hi, I'm Jugal.</h1>
 
-  <p class="note">🔊 Unmute the video for sound!</p>
+  <!-- Description -->
+  <p>
+    I'm just a guy with an internet connection who loves watching movies, TV series, and anime.  
+    I'm also passionate about space, technology, and all things related to computers.
+  </p>
 
-  <!-- Madara quote -->
-  <blockquote class="quote">
-    "Thinking of peace whilst spilling blood is something that only humans could do."
-    <br>— Madara Uchiha
-  </blockquote>
+  <!-- Social Section -->
+  <div class="social-section">Feel free to check out my social links below:</div>
+  <div class="social-links">
+    <a href="https://www.instagram.com/jlekharu" target="_blank" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://t.me/yourusername" target="_blank" title="Telegram">
+      <i class="fab fa-telegram"></i>
+    </a>
+  </div>
 
 </body>
 </html>
